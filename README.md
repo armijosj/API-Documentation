@@ -1,2 +1,9 @@
-# API-Documentation
-COMP 3040 Assignment 3
+# Description
+
+
+# List of endpoints
+
+
+# JSON
+
+# Sample request with sample response
