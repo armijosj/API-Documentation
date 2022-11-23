@@ -5,10 +5,10 @@ A simple API to access Winnipeg Transit information. User can access information
 ## GET: Timetable/{stop number}
 Returns the timetable for the specified stop number. 
 
-## GET: Stops/{area code} or Stops/search?area-code={area code}
+## GET: Stops/{area code}
 Returns a list of bus stops that are inside the specified area code.
 
-## GET: Stops/Route/{route number} or Stops/search?route={route}
+## GET: Stops/Route/{route number} 
 Returns all the stops that the specified route goes through.
 
 
