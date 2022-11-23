@@ -20,10 +20,22 @@ TimeTimetable/{stop number}
     - Returns: 
     ```
     {
-        [
-            "671, South Point, 11:00:00",
-            "72, Richmond, 11:15:00",
-            "51, Downtown, 11:30:00" 
+        "results":[
+            {
+                "routeId": 671,
+                "lastStopName": "South Point"
+                "time": "11:00:00"
+            },
+            {
+                "StopId": 72,
+                "lastStopName": "Richmond"
+                "time": "11:15:00"
+            },
+            {
+                "StopId": 51,
+                "lastStopName": "Downtown"
+                "time": "11:30:00"
+            }
         ]
     }
     ```
@@ -42,10 +54,19 @@ TimeTimetable/{stop number}
     - Returns:
     ```
     {
-        [
-            "12345, Hawkstead",
-            "67898, Richmond",
-            "54313, Thornsdale"
+        "results":[
+            {
+                "stopId": 12345,
+                "stopName": "Hawkstead"
+            },
+            {
+                "stopId": 67898,
+                "stopName": "Richmond"
+            },
+            {
+                "stopId": 54313,
+                "stopName": "Thornsdale"
+            }
         ]
     }
     ```
