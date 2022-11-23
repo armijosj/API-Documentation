@@ -18,6 +18,7 @@ Returns all the stops that the specified route goes through.
 TimeTimetable/{stop number}
 - GET: Timetable/17784
     - Returns: 
+    ```
     {
         [
             "671, South Point, 11:00:00",
@@ -25,8 +26,10 @@ TimeTimetable/{stop number}
             "51, Downtown, 11:30:00" 
         ]
     }
+    ```
 - GET: Stops/R3T2M9
     - Returns:
+    ```
     {
         [
             "12345",
@@ -34,8 +37,10 @@ TimeTimetable/{stop number}
             "72523"
         ]
     }
+    ```
 - GET: Stops/Route/671
     - Returns:
+    ```
     {
         [
             "12345, Hawkstead",
@@ -43,4 +48,5 @@ TimeTimetable/{stop number}
             "54313, Thornsdale"
         ]
     }
+    ```
 
