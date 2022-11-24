@@ -12,7 +12,55 @@ Returns a list of bus stops that are inside the specified area code.
 Returns all the stops that the specified route goes through.
 
 
-# JSON
+# Resources: Formatted as JSON
+
+- The result data is formatted using JSON.
+ 
+*NOTE: All the times are in UTC.*
+
+GET: Timetable/{stop number}
+```
+{
+    "results":
+    {
+       "Bus List": [ 
+        {"routeId": BUS_NUMBER, "lastStopName": FINAL_STOP_NAME, "time": TIME}, 
+        ...
+       ]
+    }
+}
+```
+
+GET: Stops/{area code} or Stops/search?area-code={area code}
+```
+{
+    "result":
+    {
+        "stopId": STOP_CODE,
+        "stopName": STOP_NAME,
+        "routeIds": [
+            {STOP_NUM, STOP_NUM, STOP_NUM,...},
+            ...
+        ]
+    }
+}
+```
+
+GET: Stops/Route/{route number} or Stops/search?route={route}
+
+```
+{
+     "result":
+    {
+        "stopId": STOP_CODE,
+        "stopName": STOP_NAME,
+        "routeIds": [
+            {STOP_NUM},
+            ...
+        ]
+    }
+}
+```
 
 # Sample request with sample response
 TimeTimetable/{stop number}
