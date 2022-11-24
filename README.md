@@ -43,10 +43,31 @@ TimeTimetable/{stop number}
     - Returns:
     ```
     {
-        [
-            "12345",
-            "67890",
-            "72523"
+        "results":[
+            {
+                "stopId": 12345,
+                "stopName": "Hawkstead"
+                "routeIds": [
+                    51,
+                    61,
+                    72
+                ]
+            },
+            {
+                "stopId": 67898,
+                "stopName": "Richmond"
+                "routeIds": [
+                    91,
+                ]
+            },
+            {
+                "stopId": 54313,
+                "stopName": "Thornsdale"
+                "routeIds": [
+                    72,
+                    80
+                ]
+            }
         ]
     }
     ```
@@ -56,16 +77,25 @@ TimeTimetable/{stop number}
     {
         "results":[
             {
-                "stopId": 12345,
-                "stopName": "Hawkstead"
+                "stopId": 12351,
+                "stopName": "Jimbo"
+                "routeIds": [
+                    671
+                ]
             },
             {
-                "stopId": 67898,
-                "stopName": "Richmond"
+                "stopId": 46847,
+                "stopName": "Wumbo"
+                "routeIds": [
+                    671
+                ]
             },
             {
-                "stopId": 54313,
-                "stopName": "Thornsdale"
+                "stopId": 35789,
+                "stopName": "Gumbo"
+                "routeIds": [
+                    671
+                ]
             }
         ]
     }
