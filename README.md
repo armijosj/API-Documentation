@@ -27,12 +27,12 @@ TimeTimetable/{stop number}
                 "time": "11:00:00"
             },
             {
-                "StopId": 72,
+                "routeId": 72,
                 "lastStopName": "Richmond"
                 "time": "11:15:00"
             },
             {
-                "StopId": 51,
+                "routeId": 51,
                 "lastStopName": "Downtown"
                 "time": "11:30:00"
             }
