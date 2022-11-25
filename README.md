@@ -2,13 +2,13 @@
 A simple API to access Winnipeg Transit information. User can access information such as timetables, stops in a route, and bus stop in an area. 
 
 # List of endpoints
-## GET: Timetable/{stop number}
+### GET: Timetable/{stop number}
 Returns the timetable for the specified stop number. 
 
-## GET: Stops/{area code} or Stops/search?area-code={area code}
+### GET: Stops/search?area-code={area code}
 Returns a list of bus stops that are inside the specified area code.
 
-## GET: Stops/Route/{route number} or Stops/search?route={route}
+### GET: Route/{route number}
 Returns all the stops that the specified route goes through.
 
 
@@ -18,44 +18,53 @@ Returns all the stops that the specified route goes through.
  
 *NOTE: All the times are in UTC.*
 
-GET: Timetable/{stop number}
+### GET: Timetable/{stop number}
 ```
 {
-    "results":
-    {
-       "Bus List": [ 
-        {"routeId": BUS_NUMBER, "lastStopName": FINAL_STOP_NAME, "time": TIME}, 
-        ...
-       ]
-    }
+   "BusSchedule": [ 
+        {
+            "routeId": BUS_NUMBER, 
+            "lastStopName": FINAL_STOP_NAME, 
+            "time": TIME
+        }, 
+    ...
+   ]
 }
 ```
 
-GET: Stops/{area code} or Stops/search?area-code={area code}
+### GET: Stops/search?area-code={area code}
 ```
 {
-    "result":
+    "AreaStops":
     {
         "stopId": STOP_CODE,
         "stopName": STOP_NAME,
         "routeIds": [
-            {STOP_NUM, STOP_NUM, STOP_NUM,...},
+            {
+                STOP_NUM, 
+                STOP_NUM, 
+                STOP_NUM,
+                ...
+            },
             ...
         ]
     }
 }
 ```
 
-GET: Stops/Route/{route number} or Stops/search?route={route}
+### GET: Route/{route}
 
 ```
 {
-     "result":
+    "RouteStops":
     {
         "stopId": STOP_CODE,
         "stopName": STOP_NAME,
         "routeIds": [
-            {STOP_NUM},
+            {
+                STOP_NUM,
+                ...
+            },
             ...
         ]
     }
@@ -64,11 +73,11 @@ GET: Stops/Route/{route number} or Stops/search?route={route}
 
 # Sample request with sample response
 TimeTimetable/{stop number}
-- GET: Timetable/17784
+### GET: Timetable/17784
     - Returns: 
     ```
     {
-        "results":[
+        "BusSchedule":[
             {
                 "routeId": 671,
                 "lastStopName": "South Point"
@@ -87,11 +96,11 @@ TimeTimetable/{stop number}
         ]
     }
     ```
-- GET: Stops/R3T2M9
+### GET: Stops/R3T2M9
     - Returns:
     ```
     {
-        "results":[
+        "AreaStops":[
             {
                 "stopId": 12345,
                 "stopName": "Hawkstead"
@@ -119,16 +128,17 @@ TimeTimetable/{stop number}
         ]
     }
     ```
-- GET: Stops/Route/671
+### GET: Route/671
     - Returns:
     ```
     {
-        "results":[
+        "RouteStops":[
             {
                 "stopId": 12351,
                 "stopName": "Jimbo"
                 "routeIds": [
-                    671
+                    671,
+                    672
                 ]
             },
             {
