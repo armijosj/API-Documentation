@@ -74,17 +74,17 @@ Returns:
         "BusSchedule":[
             {
                 "routeId": 671,
-                "lastStopName": "South Point"
+                "lastStopName": "South Point",
                 "time": "11:00:00"
             },
             {
                 "routeId": 72,
-                "lastStopName": "Richmond"
+                "lastStopName": "Richmond",
                 "time": "11:15:00"
             },
             {
                 "routeId": 51,
-                "lastStopName": "Downtown"
+                "lastStopName": "Downtown",
                 "time": "11:30:00"
             }
         ]
@@ -97,7 +97,7 @@ Returns:
         "AreaStops":[
             {
                 "stopId": 12345,
-                "stopName": "Hawkstead"
+                "stopName": "Hawkstead",
                 "routeIds": [
                     51,
                     61,
@@ -106,14 +106,14 @@ Returns:
             },
             {
                 "stopId": 67898,
-                "stopName": "Richmond"
+                "stopName": "Richmond",
                 "routeIds": [
                     91,
                 ]
             },
             {
                 "stopId": 54313,
-                "stopName": "Thornsdale"
+                "stopName": "Thornsdale",
                 "routeIds": [
                     72,
                     80
@@ -129,7 +129,7 @@ Returns:
         "RouteStops":[
             {
                 "stopId": 12351,
-                "stopName": "Jimbo"
+                "stopName": "Jimbo",
                 "routeIds": [
                     671,
                     672
@@ -137,14 +137,14 @@ Returns:
             },
             {
                 "stopId": 46847,
-                "stopName": "Wumbo"
+                "stopName": "Wumbo",
                 "routeIds": [
                     671
                 ]
             },
             {
                 "stopId": 35789,
-                "stopName": "Gumbo"
+                "stopName": "Gumbo",
                 "routeIds": [
                     671
                 ]
