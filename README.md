@@ -68,8 +68,8 @@ Returns all the stops that the specified route goes through.
 # Sample request with sample response
 TimeTimetable/{stop number}
 ### GET: Timetable/17784
-    - Returns: 
-    ```
+Returns:
+```
     {
         "BusSchedule":[
             {
@@ -89,10 +89,10 @@ TimeTimetable/{stop number}
             }
         ]
     }
-    ```
+```
 ### GET: Stops/R3T2M9
-    - Returns:
-    ```
+Returns:
+```
     {
         "AreaStops":[
             {
@@ -121,10 +121,10 @@ TimeTimetable/{stop number}
             }
         ]
     }
-    ```
+```
 ### GET: Route/671
-    - Returns:
-    ```
+Returns:
+```
     {
         "RouteStops":[
             {
@@ -151,5 +151,4 @@ TimeTimetable/{stop number}
             }
         ]
     }
-    ```
-
+```
