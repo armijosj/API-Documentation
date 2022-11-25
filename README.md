@@ -40,12 +40,9 @@ Returns all the stops that the specified route goes through.
         "stopId": STOP_CODE,
         "stopName": STOP_NAME,
         "routeIds": [
-            {
-                STOP_NUM, 
-                STOP_NUM, 
-                STOP_NUM,
-                ...
-            },
+            STOP_NUM, 
+            STOP_NUM, 
+            STOP_NUM
             ...
         ]
     }
@@ -61,10 +58,7 @@ Returns all the stops that the specified route goes through.
         "stopId": STOP_CODE,
         "stopName": STOP_NAME,
         "routeIds": [
-            {
-                STOP_NUM,
-                ...
-            },
+            STOP_NUM,
             ...
         ]
     }
