@@ -90,7 +90,7 @@ Returns:
         ]
     }
 ```
-### GET: Stops/R3T2M9
+### GET: Stops/search?area-code=R3T2M9
 Returns:
 ```
     {
