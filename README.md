@@ -5,13 +5,13 @@ A simple API to access Winnipeg Transit information. User can access information
 
 Using **GET** request.
 
-### GET: Timetable/{bus-stop num}
+### GET: /Timetable/{bus-stop num}
 Returns the timetable for the specified stop number. 
 
-### GET: Stops/search?area-code={area code}
+### GET: /Stops/search?area-code={area code}
 Returns a list of bus stops that are inside the specified area code.
 
-### GET: Route/{route number}
+### GET: /Route/{route number}
 Returns all the stops that the specified route goes through.
 
 
@@ -22,7 +22,7 @@ Returns all the stops that the specified route goes through.
  
 *NOTE: All the times are in UTC.*
 
-### GET: Timetable/{bus-stop num}
+### GET: /Timetable/{bus-stop num}
 ```
 {
    "BusSchedule": [ 
@@ -36,7 +36,7 @@ Returns all the stops that the specified route goes through.
 }
 ```
 
-### GET: Stops/search?area-code={area code}
+### GET: /Stops/search?area-code={area code}
 ```
 {
     "AreaStops":
@@ -53,7 +53,7 @@ Returns all the stops that the specified route goes through.
 }
 ```
 
-### GET: Route/{route id}
+### GET: /Route/{route id}
 
 ```
 {
@@ -71,7 +71,7 @@ Returns all the stops that the specified route goes through.
 
 # Sample request with sample response
 TimeTimetable/{bus-stop num}
-### GET: Timetable/17784
+### GET: /Timetable/17784
 Returns:
 ```
     {
@@ -94,7 +94,7 @@ Returns:
         ]
     }
 ```
-### GET: Stops/search?area-code=R3T2M9
+### GET: /Stops/search?area-code=R3T2M9
 Returns:
 ```
     {
@@ -126,7 +126,7 @@ Returns:
         ]
     }
 ```
-### GET: Route/671
+### GET: /Route/671
 Returns:
 ```
     {
