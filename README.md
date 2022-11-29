@@ -2,7 +2,10 @@
 A simple API to access Winnipeg Transit information. User can access information such as timetables, stops in a route, and bus stop in an area. 
 
 # List of endpoints
-### GET: Timetable/{stop number}
+
+Using **GET** request.
+
+### GET: Timetable/{bus-stop num}
 Returns the timetable for the specified stop number. 
 
 ### GET: Stops/search?area-code={area code}
@@ -15,10 +18,11 @@ Returns all the stops that the specified route goes through.
 # Resources: Formatted as JSON
 
 - The result data is formatted using JSON.
+- The URL would be `https://winnipeg-transit.org/json`.
  
 *NOTE: All the times are in UTC.*
 
-### GET: Timetable/{stop number}
+### GET: Timetable/{bus-stop num}
 ```
 {
    "BusSchedule": [ 
@@ -66,7 +70,7 @@ Returns all the stops that the specified route goes through.
 ```
 
 # Sample request with sample response
-TimeTimetable/{stop number}
+TimeTimetable/{bus-stop num}
 ### GET: Timetable/17784
 Returns:
 ```
@@ -152,3 +156,9 @@ Returns:
         ]
     }
 ```
+
+## Group members
+1. Wen, Chu Hao
+2. Armijos, Jun
+3. Patel, Khush Bhrugesh
+4. Sood, Tanish
